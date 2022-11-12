@@ -1,0 +1,156 @@
+.footer {
+  position: relative;
+  padding: 30px 0;
+  background-color: #E6E8EF;
+  z-index: 5;
+
+  // .footer__inner
+
+  &__inner {}
+
+  // .footer__top
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #DDE1E7;
+
+    @media (max-width:1120px) {
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+
+    @include small-tablet {
+      row-gap: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  // .footer__logos
+
+  &__logos {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    @include small-tablet {
+      flex: 0 1 100%;
+      justify-content: space-between;
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {}
+
+  // .footer__logo-image
+
+  &__logo-image {}
+
+  // .footer__nav
+
+  &__nav {
+    @include small-tablet {
+      flex: 0 1 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
+
+  // .footer__nav-list
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+
+    @media (max-width:1120px) {
+      flex-direction: column;
+      row-gap: 10px;
+      justify-content: flex-end;
+      text-align: right;
+      align-items: flex-end;
+    }
+
+    @include small-tablet {
+      text-align: center;
+      align-items: center;
+    }
+
+  }
+
+  // .footer__nav-item
+
+  &__nav-item {}
+
+  // .footer__nav-link
+
+  &__nav-link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #95999F;
+  }
+
+  // .footer__socials
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    @media (max-width:1120px) {
+      flex: 0 1 100%;
+      justify-content: center;
+    }
+  }
+
+  // .footer__socials-item
+
+  &__socials-item {}
+
+  // .footer__socials-link
+
+  &__socials-link {
+
+    &:hover {
+      svg path {
+        fill: var(--red-color);
+      }
+
+      svg circle {
+        stroke: var(--red-color);
+      }
+    }
+  }
+
+  // .footer__bottom
+
+  &__bottom {}
+
+  // .footer__text
+
+  &__text {
+    max-width: 670px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.2);
+
+    a {
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.2);
+      text-decoration: underline;
+    }
+  }
+
+}
