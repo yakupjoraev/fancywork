@@ -1,0 +1,268 @@
+.towels {
+  position: relative;
+  padding: 50px 0 80px 0;
+  background-color: var(--white-color);
+  z-index: 5;
+
+  @include tablet {
+    padding: 30px 0;
+  }
+
+  @include mobile {
+    padding: 30px 0 20px 0;
+  }
+
+  // .towels__inner
+
+  &__inner {}
+
+  // .towels__top
+
+  &__top {
+    max-width: 680px;
+    margin-bottom: 50px;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
+
+    @include mobile {
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  // .towels__title
+
+  &__title {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: var(--black-color);
+
+    span {
+      color: var(--red-color);
+    }
+
+    @include mobile {
+      margin-bottom: 20px;
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+
+
+  // .towels__descr
+
+  &__descr {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  // .towels__main
+
+  &__main {}
+
+  // .towels__list
+
+  &__list {}
+
+  // .towels__item
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  // .towels__slider
+
+  &__slider {
+    flex: 0 0 380px;
+
+    @include tablet {
+      flex: 0 0 250px;
+    }
+
+    @include mobile {
+      flex: 0 1 auto;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  // .towels__slider-download
+
+  &__slider-download {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--red-color);
+
+    &:hover {
+      text-decoration-line: underline;
+      text-underline-offset: 3px;
+    }
+  }
+
+  // .towels__slider-icon
+
+  &__slider-icon {
+    margin-right: 10px;
+  }
+
+  // .towels__item-info
+
+  &__item-info {
+
+    @include tablet {
+      flex: 0 1 calc(100% - 270px);
+    }
+  }
+
+  // .towels__item-title
+
+  &__item-title {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--black-color);
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  // .towels__item-text
+
+  &__item-text {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--black-color);
+
+    @include tablet {
+      margin-bottom: 10px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    @include mobile {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  // .towels__item-bottom
+
+  &__item-bottom {}
+
+  // .towels__item-label
+
+  &__item-label {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  // .towels__item-compound
+
+  &__item-compound {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-title--mobile {
+    display: none;
+
+    @include tablet {
+      flex: 0 1 100%;
+      display: flex;
+      margin-bottom: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: var(--black-color);
+    }
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+.item-compound {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  // .item-compound__symbols
+
+  &__symbols {
+    display: flex;
+  }
+
+  // .item-compound__text
+
+  &__text {
+    margin-right: 3px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--gray-color);
+  }
+
+  // .item-compound__text--red
+
+  &__text--red {
+    margin-right: 3px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--red-color);
+  }
+}
+
+
+.towels__footer {
+  padding: 50px 0 70px 0;
+  background-color: #F2F3F7;
+
+  & .info__elements {
+    margin-bottom: 0;
+  }
+
+  & .info__element {
+    position: relative;
+    z-index: 5;
+  }
+}
