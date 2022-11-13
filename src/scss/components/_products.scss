@@ -132,6 +132,7 @@
   // .product__slide-img
 
   &__slide-img {
+    object-fit: contain;
 
     @include tablet {
       width: 100%;
@@ -172,6 +173,28 @@
 
     &.swiper-pagination-bullet-active {
       background-color: var(--red-color);
+    }
+  }
+}
+
+.products.products-catalog .products__inner {
+
+  @include tablet {
+
+    &::before {
+      content: '';
+      right: 50%;
+      top: 235px;
+      transform: translateX(50%);
+    }
+  }
+
+  @media (max-width: 700px) {
+    &::before {
+      content: '';
+      top: 98%;
+      right: -115px;
+      transform: translateX(0);
     }
   }
 }

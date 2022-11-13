@@ -6,8 +6,11 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/footer";
+@import "./components/breadcrumbs";
+@import "./components/modal";
 @import "./components/hero";
 @import "./components/about-project";
 @import "./components/products";
 @import "./components/info";
-@import "./components/footer";
+@import "./components/info-catalog";

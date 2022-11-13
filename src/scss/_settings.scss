@@ -71,6 +71,12 @@ a {
     bottom: 187px;
     left: -95px;
   }
+
+  .site-container--catalog::before {
+    bottom: 460px;
+    left: auto;
+    right: -35px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -78,6 +84,7 @@ a {
     content: none;
   }
 }
+
 
 .is-hidden {
   display: none !important;

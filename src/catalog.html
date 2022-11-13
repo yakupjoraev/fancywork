@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container site-container--catalog">
+    @include('partials/header.html')
+    <main class="main">
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.7891 7.39022L8.35311 0.958972C8.30677 0.91254 8.25173 0.875704 8.19114 0.85057C8.13054 0.825437 8.06559 0.8125 7.99999 0.8125C7.93439 0.8125 7.86943 0.825437 7.80884 0.85057C7.74825 0.875704 7.6932 0.91254 7.64686 0.958972L1.21093 7.39022C1.02343 7.57772 0.917175 7.83241 0.917175 8.09803C0.917175 8.6496 1.36561 9.09803 1.91718 9.09803H2.5953V13.6871C2.5953 13.9637 2.81874 14.1871 3.0953 14.1871H6.99999V10.6871H8.74999V14.1871H12.9047C13.1812 14.1871 13.4047 13.9637 13.4047 13.6871V9.09803H14.0828C14.3484 9.09803 14.6031 8.99335 14.7906 8.80428C15.1797 8.41366 15.1797 7.78085 14.7891 7.39022Z"
+                    fill="#95999F" />
+                </svg>
+              </a>
+            </li>
+
+            <li class="breadcrumbs__item">
+              Чувашская вышивка в изделиях
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      @include('partials/products-catalog.html')
+      @include('partials/info-catalog.html')
+    </main>
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+</body>
+
+</html>
