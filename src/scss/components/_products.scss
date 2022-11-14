@@ -133,6 +133,7 @@
 
   &__slide-img {
     object-fit: contain;
+    border-radius: 8px 8px 0px 0px;
 
     @include tablet {
       width: 100%;
@@ -197,4 +198,8 @@
       transform: translateX(0);
     }
   }
+}
+
+.products.products-symbols {
+  background-color: #F2F3F7;
 }
