@@ -1,2 +1,2 @@
-import "./components/product-slider";
 import "./components/symbols";
+import "./components/product-hover-slider";
