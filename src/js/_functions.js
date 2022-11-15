@@ -50,15 +50,15 @@ import { burger } from './functions/burger';
 // });
 
 // Подключение свайпера
-import Swiper, {Navigation, Pagination } from 'swiper';
-Swiper.use([Navigation, Pagination]);
-const swiper = new Swiper('.product__container', {
-  slidesPerView: 'auto',
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+// import Swiper, {Navigation, Pagination } from 'swiper';
+// Swiper.use([Navigation, Pagination]);
+// const swiper = new Swiper('.product__container', {
+//   slidesPerView: 'auto',
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';
