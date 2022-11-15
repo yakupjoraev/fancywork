@@ -1,6 +1,6 @@
 .info {
   padding: 50px 0 70px 0;
-  background-color: #E5E5E5;
+  background-color: #F2F3F7;
 
   @include tablet {
     padding: 40px 0;
@@ -110,7 +110,7 @@
 
 
       @include mobile {
-        background-position: 200px center;
+        background-position: 170px center;
       }
     }
 
@@ -159,6 +159,7 @@
     background-color: var(--white-color);
     border: 1px solid #DDE1E7;
     border-radius: 8px;
+    overflow: hidden;
 
     @media (max-width: 700px) {
       flex-direction: column;

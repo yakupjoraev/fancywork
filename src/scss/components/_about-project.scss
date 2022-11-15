@@ -1,7 +1,7 @@
 .about-project {
   position: relative;
   padding: 50px 0 65px 0;
-  background-color: #E5E5E5;
+  background-color: #F2F3F7;
 
   &::after {
     content: '';
@@ -160,10 +160,25 @@
     line-height: 21px;
     color: var(--black-color);
 
+    & br {
+      display: none;
+    }
+
     @include tablet {
       font-size: 16px;
       line-height: 19px;
+
+      & br {
+        display: block;
+      }
     }
+
+    @include small-tablet {
+      & br {
+        display: none;
+      }
+    }
+
 
   }
 
