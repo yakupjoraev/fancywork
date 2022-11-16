@@ -20,6 +20,13 @@
     background-position: right bottom;
   }
 
+  @media (max-width: 1400px) {
+
+    &::before {
+      background-position: 30vw bottom;
+    }
+  }
+
   @include tablet {
     padding: 50px 0;
 
@@ -55,10 +62,16 @@
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 49px;
+    font-size: 50px;
+    line-height: 60px;
     text-transform: uppercase;
     color: var(--black-color);
+
+    @include tablet {
+      font-size: 40px;
+      line-height: 49px;
+    }
+
 
     @include small-tablet {
       margin-bottom: 0;

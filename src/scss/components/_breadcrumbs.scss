@@ -7,12 +7,19 @@
   &__list {
     display: flex;
     align-items: center;
+    width: 100%;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   // .breadcrumbs__item
 
   &__item {
     position: relative;
+    white-space: nowrap;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -26,12 +33,18 @@
     &:not(:last-child) {
       margin-right: 10px;
     }
+
+    @include mobile {
+      font-size: 10px;
+      line-height: 12px;
+    }
   }
 
   // .breadcrumbs__link
 
   &__link {
     position: relative;
+    white-space: nowrap;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
