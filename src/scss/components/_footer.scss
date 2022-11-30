@@ -154,3 +154,27 @@
   }
 
 }
+
+.footer__made {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  column-gap: 5px;
+  font-size: 14px;
+}
+
+@media (max-width: (1024px)) {
+  .footer__text {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: (768px)) {
+  .footer__made {
+    justify-content: center;
+  }
+}
+
+.footer__made-link {
+  margin-top: -2px;
+}
